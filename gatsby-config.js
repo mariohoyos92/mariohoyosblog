@@ -1,33 +1,25 @@
 module.exports = {
   siteMetadata: {
-    title: `Mario Hoyos | Blog`,
-    name: `Narative`,
-    siteUrl: `https://novela.narative.co`,
-    description: `This is my description that will be used in the meta tags and important for search results`,
+    title: `Mario Hoyos | Personal Blog`,
+    name: `Mario Hoyos`,
+    siteUrl: `https://mariohoyos.io`,
+    description: `Personal blog for Mario Hoyos. Often blogs about web development, music, general observations.`,
     hero: {
-      heading: `Welcome to Novela, the simplest way to start publishing with Gatsby.`,
+      heading: `I write about stuff I find interesting, you can read it if you'd like :)`,
       maxWidth: 652
     },
     social: [
       {
         name: `twitter`,
-        url: `https://twitter.com/narative`
+        url: `https://twitter.com/marioahoyos`
       },
       {
         name: `github`,
-        url: `https://github.com/narative`
-      },
-      {
-        name: `instagram`,
-        url: `https://instagram.com/narative.co`
+        url: `https://github.com/mariohoyos92`
       },
       {
         name: `linkedin`,
-        url: `https://www.linkedin.com/company/narative/`
-      },
-      {
-        name: `dribbble`,
-        url: `https://dribbble.com/narativestudio`
+        url: `https://www.linkedin.com/in/mario-hoyos/`
       }
     ]
   },
@@ -39,6 +31,7 @@ module.exports = {
         contentAuthors: "content/authors",
         basePath: "/",
         authorsPage: true,
+        mailchimp: true,
         sources: {
           local: true
           // contentful: true,
@@ -48,14 +41,23 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Novela by Narative`,
-        short_name: `Novela`,
+        name: `Mario Hoyos`,
+        short_name: `Mario`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#fff`,
         display: `standalone`,
         icon: `src/assets/favicon.png`
       }
-    }
+    },
+    {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint:
+          "https://mariohoyos.us4.list-manage.com/subscribe/post?u=33da985eb59d77e7e35d2e960&amp;id=668d2d0e4f"
+      }
+    },
+    "gatsby-plugin-twitter",
+    "gatsby-plugin-sitemap"
   ]
 };

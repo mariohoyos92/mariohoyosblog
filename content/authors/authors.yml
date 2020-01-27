@@ -1,9 +1,9 @@
 - name: Mario Hoyos
   bio: |
     Hi! I am a full stack web developer who used to be a pharmacist once upon a time. I like to learn publicly with the hope that what you find here might serve you too.
-  avatar: ./avatars/Profpic.jpg
+  avatar: ./avatars/mario.jpg
   social:
-    - url: https://https://github.com/mariohoyos92
+    - url: https://github.com/mariohoyos92
     - url: https://twitter.com/marioahoyos
-    - url: https://www.linkedin.com/in/mario-hoyos/
+    - url: https://www.linkedin.com/in/mario-hoyos
   featured: true
