@@ -3,9 +3,9 @@ module.exports = {
     title: `Mario Hoyos | Personal Blog`,
     name: `Mario Hoyos`,
     siteUrl: `https://mariohoyos.io`,
-    description: `Personal blog for Mario Hoyos. Often blogs about web development, music, general observations.`,
+    description: `Personal blog for Mario Hoyos, a full-stack web developer`,
     hero: {
-      heading: `I write about stuff I find interesting, you can read it if you'd like :)`,
+      heading: `Mostly web development, also other stuff :)`,
       maxWidth: 652
     },
     social: [
