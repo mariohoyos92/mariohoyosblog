@@ -1,27 +1,27 @@
 module.exports = {
   siteMetadata: {
-    title: `Mario Hoyos | Personal Blog`,
+    title: `Mario Hoyos | Personal Blog | Change careers into tech`,
     name: `Mario Hoyos`,
     siteUrl: `https://mariohoyos.io`,
-    description: `Personal blog for Mario Hoyos, a full-stack web developer`,
+    description: `Personal blog for Mario Hoyos, a full-stack web developer helping people change careers into technology`,
     hero: {
-      heading: `Mostly web development, also other stuff :)`,
-      maxWidth: 652
+      heading: `I made the career change into tech - you can too.`,
+      maxWidth: 652,
     },
     social: [
       {
         name: `twitter`,
-        url: `https://twitter.com/marioahoyos`
+        url: `https://twitter.com/marioahoyos`,
       },
       {
         name: `github`,
-        url: `https://github.com/mariohoyos92`
+        url: `https://github.com/mariohoyos92`,
       },
       {
         name: `linkedin`,
-        url: `https://www.linkedin.com/in/mario-hoyos/`
-      }
-    ]
+        url: `https://www.linkedin.com/in/mario-hoyos/`,
+      },
+    ],
   },
   plugins: [
     {
@@ -33,10 +33,10 @@ module.exports = {
         authorsPage: true,
         mailchimp: true,
         sources: {
-          local: true
+          local: true,
           // contentful: true,
-        }
-      }
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -47,17 +47,17 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#fff`,
         display: `standalone`,
-        icon: `src/assets/favicon.png`
-      }
+        icon: `src/assets/favicon.png`,
+      },
     },
     {
       resolve: "gatsby-plugin-mailchimp",
       options: {
         endpoint:
-          "https://mariohoyos.us4.list-manage.com/subscribe/post?u=33da985eb59d77e7e35d2e960&amp;id=668d2d0e4f"
-      }
+          "https://mariohoyos.us4.list-manage.com/subscribe/post?u=33da985eb59d77e7e35d2e960&amp;id=668d2d0e4f",
+      },
     },
     "gatsby-plugin-twitter",
-    "gatsby-plugin-sitemap"
-  ]
+    "gatsby-plugin-sitemap",
+  ],
 };
